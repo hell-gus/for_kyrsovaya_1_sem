@@ -13,7 +13,6 @@ int main(){
             text = readText(); // Чтение текста
             removeEmptySentences(&text); // Удаление пустых предложений
             removeCopies(&text); // Удаление копий
-            wprintf(L"%d", text.len);
             printText(text); // Вывод текста в stdout
             freeText(&text); // Освобождение памяти
             break;
@@ -21,8 +20,8 @@ int main(){
             text = readText();
             removeEmptySentences(&text);
             removeCopies(&text);
-
-            printText(text);
+            findMask(&text);
+            //printText(text);
             freeText(&text);
             break;
         case '2':

@@ -41,6 +41,8 @@ void freeText(Text* text); // Объявление функции освобож
 void changeOneWord(Word* word, wchar_t* toWord);
 int cmp(const void *a, const void *b);
 wchar_t* input_line();
+int comparation(const void* a, const void* b);
+void findMask(Text* text);
 void removeNotUpperSentence(Text* text);//func2
 int compare_by_latin_letters(const void* arg1, const void* arg2);
 void sort_by_latin_letters(Text text);
